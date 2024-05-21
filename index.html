@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Bài tập tính tiền phạt thẻ tính dụng</h2>
+    <div class="mb-3">
+      <label for="" class="form-label">Nhập số tiền phải trả</label>
+      <input type="text" class="form-control" name="" id="soTienPhaiTra" aria-describedby="helpId"
+        placeholder="Nhập số tiền phải trả" />
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Nhập số tiền đã trả</label>
+      <input type="text" class="form-control" name="" id="soTienDaTra" aria-describedby="helpId"
+        placeholder="Nhập số tiền đã trả" />
+    </div>
+    <button class="btn btn-dark" id="btnSoTienLai">Tính tiền lãi hàng tháng</button>
+  </div>
+
+
+  <div class="container mt-5">
+    <h2>Bài tập tính tiền lương nhân viên theo giờ</h2>
+    <div class="mb-3">
+      <label for="" class="form-label">Số tiền</label>
+      <input type="text" class="form-control" name="" id="soTienLuong" aria-describedby="helpId"
+        placeholder="Nhập số tiền lương" />
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Số giờ</label>
+      <input type="text" class="form-control" name="" id="soGioLam" aria-describedby="helpId"
+        placeholder="Nhập số giờ làm" />
+    </div>
+    <button class="btn btn-success" id="btnTinhLuong">Tính tiền lương</button>
+    <div class="bg-danger bg-opacity-75 text-white p-3 mt-3" id="ketQuaBaiTap2"></div>
+  </div>
+
+
+  <div class="container mt-5">
+    <h2>Bài tập hiển thị người đang sử dụng máy tính</h2>
+    <div class="mb-3">
+      <label for="" class="form-label">Chọn người dùng</label>
+      <select class="form-select form-select-lg" name="" id="chonNguoiDung">
+        <option selected>Chọn người đang sử dụng</option>
+        <option value="mẹ">Mẹ</option>
+        <option value="cha">Cha</option>
+        <option value="chị">Chị</option>
+        <option value="ông nội">Ông nội</option>
+      </select>
+    </div>
+    <button class="btn btn-dark" id="btnCauChao">Hiển thị câu chào</button>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <!-- <img src="..." class="rounded me-2" alt="..."> -->
+        <strong class="me-auto">Đoạn thông báo</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
